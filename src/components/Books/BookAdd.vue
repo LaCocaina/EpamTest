@@ -36,7 +36,14 @@
                     name: "",
                     author: "",
                     year: "",
-                }
+                },
+                bookPurge: {
+                    id: 0,
+                    pic: "",
+                    name: "",
+                    author: "",
+                    year: "",
+                },
             }
         },
         methods: {
@@ -45,6 +52,7 @@
                     this.$emit('addBook', this.book);
                     this.toggle = !this.toggle;
                     this.error = 0;
+                    this.book = Object.assign({}, this.bookPurge);
                 } else {
                     this.error = 1;
                 }
