@@ -4,3 +4,7 @@
 ```
 npm install
 ```
+## А потом
+```
+npm run build
+```
